@@ -4,7 +4,6 @@
     <title>Liam McKimm</title>
     <link href="https://fonts.googleapis.com/css?family=Denk+One|Roboto:400,400i,700,700i" rel="stylesheet">
     <link href="https://cdn.rawgit.com/tholman/github-corners/master/css/styles.css" rel="stylesheet">
-    <link href="https://cdn.rawgit.com/l-lin/font-awesome-animation/master/dist/font-awesome-animation.min.css" rel="stylesheet">
     <link href="https://cdn.rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css" rel="stylesheet">
     <style>
       html,body {
@@ -43,7 +42,35 @@
                      0 3px 0 rgb(187,187,187),
                      0 4px 0 rgb(185,185,185),
                      0 5px 0 rgb(170,170,170),
-                     0 15px 5px rgba(0,0,0,0.14902);
+                     0 7.5px 5px rgba(0,0,0,0.14902);
+        -webkit-animation: floating 2s ease-in-out infinite;
+        -moz-animation: floating 2s ease-in-out infinite;
+        -o-animation: floating 2s ease-in-out infinite;
+        animation: floating 2s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes floating {
+        0% { -webkit-transform: translateY(0); }
+        50% { -webkit-transform: translateY(-7px); }
+        100% { -webkit-transform: translateY(0); }
+      }
+
+      @-moz-keyframes floating {
+        0% { -moz-transform: translateY(0); }
+        50% { -moz-transform: translateY(-7px); }
+        100% { -moz-transform: translateY(0); }
+      }
+
+      @-o-keyframes floating {
+        0% { -o-transform: translateY(0); }
+        50% { -o-transform: translateY(-7px); }
+        100% { -o-transform: translateY(0); }
+      }
+
+      @keyframes floating {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-7px); }
+        100% { transform: translateY(0); }
       }
 
       .markdown-body {
