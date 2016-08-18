@@ -52,27 +52,27 @@
       }
 
       @-webkit-keyframes floating {
-        0% { -webkit-transform: translateY(0); }
-        50% { -webkit-transform: translateY(-7px); }
-        100% { -webkit-transform: translateY(0); }
+        0% { -webkit-transform: translateY(-7px); }
+        50% { -webkit-transform: translateY(7px); }
+        100% { -webkit-transform: translateY(7px); }
       }
 
       @-moz-keyframes floating {
-        0% { -moz-transform: translateY(0); }
-        50% { -moz-transform: translateY(-7px); }
-        100% { -moz-transform: translateY(0); }
+        0% { -moz-transform: translateY(-7px); }
+        50% { -moz-transform: translateY(7px); }
+        100% { -moz-transform: translateY(-7px); }
       }
 
       @-o-keyframes floating {
-        0% { -o-transform: translateY(0); }
-        50% { -o-transform: translateY(-7px); }
-        100% { -o-transform: translateY(0); }
+        0% { -o-transform: translateY(-7px); }
+        50% { -o-transform: translateY(7px); }
+        100% { -o-transform: translateY(-7px); }
       }
 
       @keyframes floating {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-7px); }
-        100% { transform: translateY(0); }
+        0% { transform: translateY(-7px); }
+        50% { transform: translateY(7px); }
+        100% { transform: translateY(-7px); }
       }
 
       .markdown-body {
@@ -115,9 +115,11 @@
          opacity: 0;
          -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
          -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+         -o-transition: opacity 0.3s, transform 0.3s;
          transition: opacity 0.3s, transform 0.3s;
          -webkit-transform: translateY(10px);
          -moz-transform: translateY(10px);
+         -o-transform: translateY(10px);
          transform: translateY(10px);
        }
 
@@ -126,6 +128,7 @@
          opacity: 1;
          -webkit-transform: translateY(0px);
          -moz-transform: translateY(0px);
+         -o-transform: translateY(0px);
          transform: translateY(0px);
        }
     </style>
@@ -138,11 +141,9 @@
       <p>
         Well, I'm fifteen.
         <br />
-        I enjoy designing applications for a variety of different platforms.
+        I build websites, desktop applications and some 3ds homebrew.
         <br />
-        I like hacking things and figuring out how they work.
-        <br />
-        Currently, I've been working on this website and making homebrew for the Nintendo 3DS.
+        I like hacking things to figure out how they work.
         <br /><br />
         I'm on <a href="https://twitter.com/nerdoguy/" target="_blank">TWITTER</a>.
         <br />
