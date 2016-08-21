@@ -18,19 +18,16 @@
         user-select: none;
         margin: 0 !important;
         padding: 0 !important;
-        overflow: hidden;
         background:
           linear-gradient(135deg, #9945a3 25%, transparent 25%) -50px 0,
           linear-gradient(225deg, #9945a3 25%, transparent 25%) -50px 0,
           linear-gradient(315deg, #9945A3 25%, transparent 25%),
           linear-gradient(45deg, #9945a3 25%, transparent 25%);
+        background-attachment: fixed;
         background-size: 100px 100px;
         background-color: #8e3094;
-        overflow: hidden;
-        overflow-y: auto;
         color: #333334;
       }
-
       h1#name {
         font-family: "Denk One";
         font-size: 108px;
@@ -183,14 +180,17 @@
         <br />
         I like hacking things to figure out how they work.
         <br /><br />
+        <h3><u>I'll update this site randomly and when I release a new project.</u></h3>
+        <br /><br />
         I'm on <a href="https://twitter.com/N3RD09UY/" target="_blank">TWITTER</a>.
         <br />
         I'm on <a href="https://github.com/N3RD09UY/" target="_blank">GITHUB</a>.
       </p>
     </article>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
     <script src="https://use.fontawesome.com/54d6398cf5.js"></script>
     <script>
       $(document).ready(function () {
@@ -202,6 +202,14 @@
             $("#vig").transition({ opacity: '0' });
           }
         });
+        var egg = new Egg("i,h,a,v,e,t,h,e,p,o,w,e,r", function() {
+          var ___s = "opacity: 0; position: absolute; top: 25px; left: 25px; width: 250px;";
+          var ___c = "<h1>HANDLE</h1> <p>BY THE POWER OF GREY SKULL!</p>";
+          $("<article class=\"markdown-body\" id=\"he-man\" style=\"" + ___s + "\"> " + ___c + " </article>").appendTo("body");
+          $(".markdown-body#he-man").draggable({ handle: "h1", containment: "html" });
+          $(".markdown-body#he-man h1").css("cursor", "move");
+          $(".markdown-body#he-man").transition({ opacity: '1' }, 1000);
+        }).listen();
       });
     </script>
   </body>
