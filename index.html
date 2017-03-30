@@ -184,6 +184,17 @@
                          0 5px 0 rgb(141,141,141),
                          0 7.5px 5px rgba(0,0,0,0.14902);
        }*/
+      ul {
+        margin: 0;
+        list-style-type: none;
+      }
+      ul > li {
+        text-indent: -5px;
+      }
+      ul > li:before {
+        content: "-";
+        text-indent: -5px;
+      }
     </style>
   </head>
   <body>
@@ -206,7 +217,11 @@
       </p>
       <h3>Friends</h3>
       <p>
-        <a href="http://pedrofracassi.me/" target="_blank">Pedro Fracassi</a>
+        <a href="http://pedrofracassi.me/" target="_blank">Pedro Fracassi</a><br />
+        <ul>
+          <li>Helped me do some things with GitHub.</li>
+          <li>Will probably translate this page.</li>
+        </ul>
       </p>
       <h3>Social Media</h3>
       <p>
